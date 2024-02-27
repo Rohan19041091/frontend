@@ -1,0 +1,30 @@
+/* styles.css */
+.header-buttons {
+    display: flex;
+    padding: 2px; /* Add padding to the container */
+    margin-left: 10%;
+    margin-top: 10px;
+  }
+  
+  .header-button {
+    padding: 8px 16px; /* Adjusted padding for smaller screens */
+    margin-right: 20px; /* Adjusted margin between buttons for smaller screens */
+    width: fit-content;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+  }
+  
+  /* Media query for responsiveness */
+  @media only screen and (max-width: 768px) {
+    .header-buttons {
+        margin-top: 20px;
+      margin-left: 5%; /* Adjusted margin-left for smaller screens */
+    }
+  
+    .header-button {
+      padding: 6px 12px; /* Further reduced padding for smaller screens */
+      margin-right: 10px; /* Further reduced margin between buttons for smaller screens */
+    }
+  }
+  

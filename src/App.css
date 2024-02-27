@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+   body{
+    margin: 2px;
+    padding: 2px;
+   }
+  }

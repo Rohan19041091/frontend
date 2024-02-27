@@ -1,0 +1,64 @@
+/* navbar.css */
+
+nav {
+  background: rgba(33, 39, 49, 1);
+  margin: 0;
+  width: auto;
+  /* Background color of the navbar */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Align the list items in the center */
+}
+
+nav ul li {
+  display: inline-block; /* Display list items inline */
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 20px; /* Adjust padding as needed */
+  color: rgba(209, 214, 218, 1); /* Color of the navbar links */
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background: rgba(33, 39, 49, 1); /* Background color on hover */
+}
+
+/* Style the input field */
+.center-input {
+  margin: 10px auto; /* Center the input horizontally */
+  display: block; /* Display input field as block element */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: calc(100% - 40px); /* Adjust input width */
+  max-width: 300px; /* Set maximum width */
+}
+
+/* Media query for responsiveness */
+@media only screen and (max-width: 600px) {
+ nav{
+  width: 69vh;
+  padding: 2px;
+  margin-right: 10px;
+  border-radius: 5px;
+ }
+ 
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav ul li {
+    display: block;
+  }
+
+  nav ul li a {
+    padding: 10px;
+  }
+}

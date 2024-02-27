@@ -1,0 +1,45 @@
+/* styles.css */
+.footer {
+    display: flex;
+    flex-wrap: wrap; /* Wrap content if it overflows */
+    justify-content: center;
+    width: 100%;
+    min-height: 400px; /* Changed to min-height for better responsiveness */
+    background: #212731;
+    color: #fff;
+  }
+  
+  .content {
+    flex: 1; /* Changed to 1 for equal distribution of space */
+    align-items: center;
+    margin-top: 3%;
+    text-align: center; /* Center content horizontally */
+  }
+  
+  .content ul {
+    margin: 10px;
+    font-size: small;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0; /* Remove default padding */
+    list-style: none; /* Remove default list styles */
+  }
+  
+  .content strong {
+    font-size: medium;
+    font-weight: 300;
+  }
+  
+  /* Media query for responsiveness */
+  @media only screen and (max-width: 768px) {
+    .footer {
+      flex-direction: column; /* Stack content vertically on smaller screens */
+      height: auto; /* Allow the footer to expand based on content */
+      width: 70vh;
+    }
+  
+    .content {
+      margin-top: 20px; /* Increased margin for spacing */
+    }
+  }
+  

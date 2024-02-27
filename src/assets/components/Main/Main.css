@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Added to stack elements vertically on smaller screens */
+}
+
+h1 {
+  height: 60px;
+  margin: 0;
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 200;
+  letter-spacing: 0em;
+  max-width: 90%; /* Adjusted width to be responsive */
+  text-align: center; /* Center text on smaller screens */
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  height: 60px;
+  font-family: Inter;
+  font-size: 38px;
+  font-weight: 200;
+  letter-spacing: 0em;
+  max-width: 90%; /* Adjusted width to be responsive */
+  text-align: center; /* Center text on smaller screens */
+}
+
+/* Media query for responsiveness */
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 36px; /* Adjust font size for smaller screens */
+    margin-left: 20%;
+  }
+
+  h2 {
+    font-size: 28px; 
+    margin-left: 50%;/* Adjust font size for smaller screens */
+  }
+}

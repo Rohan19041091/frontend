@@ -1,0 +1,55 @@
+/* styles.css */
+.signUpContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    place-items: center;
+    margin: 10px auto; /* Center the container horizontally and add margin for spacing */
+    margin-left: 18%;
+    margin-bottom: 30px;
+}
+
+.leftText h3 {
+    height: 60px;
+    font-family: Inter;
+    font-size: 35px;
+    color: #5C6874;
+    font-weight: 200;
+    letter-spacing: 0em;
+    max-width: 90%;
+    text-align: center;
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+}
+
+/* styles.css */
+.inputField,
+.submitButton {
+    padding: 8px 12px;
+    border: none;
+    background-color: #fff;
+    border-radius: 10px 0 0 12px; /* top-left, top-right, bottom-right, bottom-left */
+}
+
+.submitButton {
+    border-radius: 0 12px 12px 0; /* top-left, top-right, bottom-right, bottom-left */
+    background-color: rgba(27, 136, 244, 1);
+    color: #FFFFFF;
+    border: none;
+}
+
+.inputField {
+    margin-right: 0;
+}
+
+/* Media query for responsiveness */
+@media only screen and (max-width: 768px) {
+    .signUpContainer {
+        grid-template-columns: 1fr; /* Single column layout on smaller screens */
+        width: 90%; /* Adjusted width for smaller screens */
+        margin-left: 30%; /* Adjusted margin for smaller screens */
+        margin-top: 20px; /* Adjusted margin for smaller screens */
+    }
+}
